@@ -1,0 +1,3 @@
+Le path du fichier est : /etc/resolv.conf
+Le fichier a ete evoque dans la video d'introduction, ainsi que dans le man de nslookup, commande qui permet de recuperer les DNS.
+De plus les deux premieres lignes de la sortie de nslookup correspondent avec les adresses de ce fichier.
