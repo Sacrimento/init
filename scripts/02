@@ -1,0 +1,2 @@
+date
+apt-get update >> /var/log/update_script.log
