@@ -1,1 +1,2 @@
-10.12.1.254 10.12.1.254 (Gateway)
+10.60.1.11 (nat-1)
+C'est le serveur NAT qui fait jonction entre le resau local et l'exterieur
