@@ -1,2 +1,5 @@
-date > /var/log/update_script.log
 apt-get update > /var/log/update_script.log
+apt-get upgrade >> /var/log/update_script.log
+
+# cron :
+# 0 4 * * 0 sh /bin/update_script.sh

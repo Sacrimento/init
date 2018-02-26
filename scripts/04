@@ -1,0 +1,15 @@
+if [ -e /etc/crontab_save ]
+then
+	save=`cat /etc/crontab_save`
+else
+	save=`md5sum /etc/crontab`
+fi
+new=`md5sum /etc/crontab`
+if [ "${save}" != "${new}" ]
+then
+	echo  "/etc/crontab has been modified" | mail -s "Cron security" root
+fi
+md5sum /etc/crontab > /etc/crontab_save
+
+# crontab :
+# 0 0 * * * /bin/cron_check.sh

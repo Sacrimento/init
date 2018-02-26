@@ -1,1 +1,1 @@
-du -ha $1
+du -ha $1 | sort -hr
