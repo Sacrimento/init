@@ -1,1 +1,1 @@
-kill $(pidof tail)
+pkill tail
